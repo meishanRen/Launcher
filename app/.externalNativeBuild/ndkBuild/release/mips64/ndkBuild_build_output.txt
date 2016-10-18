@@ -1,0 +1,5 @@
+md "E:\YOBBOM\launcher\app\build\intermediates\ndkBuild\release\lib\mips64" >NUL 2>NUL || rem
+C:/Users/Administrator/AppData/Local/Android/Sdk/ndk-bundle/build//../prebuilt/windows-x86_64/bin/echo.exe [mips64] "Install        ": "libgoke.so => E:\YOBBOM\launcher\app\build\intermediates\ndkBuild\release\lib/mips64/libgoke.so"
+copy /b/y "E:\YOBBOM\launcher\app\.externalNativeBuild\ndkBuild\release\obj\local\mips64\libgoke.so" "E:\YOBBOM\launcher\app\build\intermediates\ndkBuild\release\lib\mips64\libgoke.so" > NUL
+C:/Users/Administrator/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64/bin/mips64el-linux-android-strip --strip-unneeded  E:\YOBBOM\launcher\app\build\intermediates\ndkBuild\release\lib/mips64/libgoke.so
+process_begin: CreateProcess(NULL, "", ...) failed.

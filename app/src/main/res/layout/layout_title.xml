@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/logo_test" />
+
+    <com.haishang.launcher.widget.DigitalClockView
+        android:id="@+id/view_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <View
+        android:id="@+id/foo_divide_view"
+        android:layout_width="1dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@id/view_clock"
+        android:background="@android:color/white" />
+
+
+    <TextView
+        android:id="@+id/tv_weather_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/view_clock"
+        android:layout_alignTop="@id/view_clock"
+        android:layout_toLeftOf="@id/foo_divide_view"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/iv_weather_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/tv_weather_info"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/tv_weather_info"
+        android:scaleType="fitCenter"
+        tools:src="@drawable/weather_status2" />
+
+    <ImageView
+        android:id="@+id/iv_network_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="13dp"
+        android:layout_toLeftOf="@id/iv_weather_icon"
+        android:scaleType="fitCenter"
+        android:src="@drawable/network_no" />
+
+    <ImageView
+        android:id="@+id/iv_u_pan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_network_state"
+        android:layout_alignTop="@id/iv_network_state"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/iv_network_state"
+        android:focusable="true"
+        android:src="@drawable/selector_u_pan"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_tf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_u_pan"
+        android:layout_alignTop="@id/iv_u_pan"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/iv_u_pan"
+        android:src="@drawable/selector_tf"
+        android:visibility="invisible" />
+
+</RelativeLayout>

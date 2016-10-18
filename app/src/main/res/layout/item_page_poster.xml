@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.open.androidtvwidget.view.MainLayout
+        android:id="@+id/main_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <!--海报区-->
+        <com.open.androidtvwidget.view.ReflectItemView
+            android:id="@+id/iv_frame1_1"
+            style="@style/poster_reflect_item">
+
+            <ImageView
+                android:id="@+id/iv_frame1"
+                style="@style/poster" />
+        </com.open.androidtvwidget.view.ReflectItemView>
+
+        <com.open.androidtvwidget.view.ReflectItemView
+            android:id="@+id/iv_frame1_2"
+            style="@style/poster_reflect_item"
+            android:layout_marginLeft="400dp">
+
+
+            <ImageView
+                android:id="@+id/iv_frame2"
+                style="@style/poster" />
+        </com.open.androidtvwidget.view.ReflectItemView>
+
+        <com.open.androidtvwidget.view.ReflectItemView
+            android:id="@+id/iv_frame1_3"
+            style="@style/poster_reflect_item"
+            android:layout_marginLeft="750dp">
+
+            <ImageView
+                android:id="@+id/iv_frame3"
+                style="@style/poster" />
+
+        </com.open.androidtvwidget.view.ReflectItemView>
+
+        <com.open.androidtvwidget.view.MainUpView
+            android:id="@+id/mainUpView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:shadowImageRes="@drawable/shadow_frame"
+            app:upImageRes="@drawable/shape_mainupview_rectangle" />
+    </com.open.androidtvwidget.view.MainLayout>
+    <!--            app:shadowImageRes="@drawable/test1_frame_shdow"-->
+</FrameLayout>

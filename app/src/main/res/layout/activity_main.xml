@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MainActivity">
+
+    <include layout="@layout/layout_title"></include>
+
+    <!--    <include layout="@layout/layout_posters"></include>-->
+
+    <include layout="@layout/layout_posters_listview"></include>
+
+    <include layout="@layout/layout_hotspot"></include>
+
+</LinearLayout>

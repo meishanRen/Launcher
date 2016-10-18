@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "E:\\YOBBOM\\launcher\\tv_widget\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\softkey_layout_view.xml",
+        "source": "E:\\YOBBOM\\launcher\\tv_widget\\build\\intermediates\\bundles\\debug\\res\\layout\\softkey_layout_view.xml"
+    },
+    {
+        "merged": "E:\\YOBBOM\\launcher\\tv_widget\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\open_listview_view.xml",
+        "source": "E:\\YOBBOM\\launcher\\tv_widget\\build\\intermediates\\bundles\\debug\\res\\layout\\open_listview_view.xml"
+    },
+    {
+        "merged": "E:\\YOBBOM\\launcher\\tv_widget\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\list_menu_item_layout.xml",
+        "source": "E:\\YOBBOM\\launcher\\tv_widget\\build\\intermediates\\bundles\\debug\\res\\layout\\list_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\YOBBOM\\launcher\\tv_widget\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\tabhost_title_head.xml",
+        "source": "E:\\YOBBOM\\launcher\\tv_widget\\build\\intermediates\\bundles\\debug\\res\\layout\\tabhost_title_head.xml"
+    },
+    {
+        "merged": "E:\\YOBBOM\\launcher\\tv_widget\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\list_menu_item_icon.xml",
+        "source": "E:\\YOBBOM\\launcher\\tv_widget\\build\\intermediates\\bundles\\debug\\res\\layout\\list_menu_item_icon.xml"
+    }
+]

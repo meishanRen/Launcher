@@ -1,0 +1,5 @@
+md "E:\YOBBOM\launcher\app\build\intermediates\ndkBuild\release\lib\arm64-v8a" >NUL 2>NUL || rem
+C:/Users/Administrator/AppData/Local/Android/Sdk/ndk-bundle/build//../prebuilt/windows-x86_64/bin/echo.exe [arm64-v8a] "Install        ": "libgoke.so => E:\YOBBOM\launcher\app\build\intermediates\ndkBuild\release\lib/arm64-v8a/libgoke.so"
+copy /b/y "E:\YOBBOM\launcher\app\.externalNativeBuild\ndkBuild\release\obj\local\arm64-v8a\libgoke.so" "E:\YOBBOM\launcher\app\build\intermediates\ndkBuild\release\lib\arm64-v8a\libgoke.so" > NUL
+C:/Users/Administrator/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64/bin/aarch64-linux-android-strip --strip-unneeded  E:\YOBBOM\launcher\app\build\intermediates\ndkBuild\release\lib/arm64-v8a/libgoke.so
+process_begin: CreateProcess(NULL, "", ...) failed.

@@ -1,0 +1,117 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--        <item name="android:layout_marginLeft">150dp</item>
+    -->
+    <style name="poster_reflect_item">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="reflect_height">100dp</item>
+        <item name="isReflect">true</item>
+        <item name="isShape">true</item>
+        <item name="android:layout_width">@dimen/poster_width</item>
+        <item name="android:layout_height">@dimen/poster_height</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">true</item>
+
+    </style>
+
+
+
+    <style name="poster">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/poster_default</item>
+    </style>
+
+    <style name="app_image_view">
+        <item name="android:layout_width">@dimen/app_width</item>
+        <item name="android:layout_height">@dimen/app_height</item>
+        <item name="android:layout_marginLeft">@dimen/app_gap</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="ProgressBar_Mini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">4dp</item>
+        <item name="android:minHeight">4dp</item>
+        <item name="android:indeterminateOnly">false</item>
+    </style>
+
+    <style name="Theme.myTheme" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/semitransparent</item>
+    </style>
+
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+
+    <style name="text">
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_16_666666">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+
+    <style name="sdw_white">
+        <item name="android:shadowColor">#7fffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.65</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="sdw_79351b">
+        <item name="android:shadowColor">#ff79351b</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="dialog_button" parent="@style/sdw_79351b">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">85dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/very_dark_grayish_blue</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowColor">@color/white</item>
+        <item name="android:background">@drawable/selector_button</item>
+    </style>
+
+    <style name="text_15_666666_sdw" parent="@style/sdw_white">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <!-- 第二次修改页面. -->
+    <style name="poster_reflect_item_sec">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="reflect_height">100dp</item>
+        <item name="isReflect">true</item>
+        <item name="isShape">true</item>
+        <item name="android:layout_width">@dimen/poster_width_sec</item>
+        <item name="android:layout_height">@dimen/poster_height_sec</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">true</item>
+
+    </style>
+</resources>

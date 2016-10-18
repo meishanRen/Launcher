@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.open.androidtvwidget.view.MainUpView
+        android:id="@+id/mainup_view_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:shadowImageRes="@drawable/shadow_frame"
+        app:upImageRes="@drawable/shape_mainupview_rectangle" />
+
+    <com.open.androidtvwidget.view.SmoothHorizontalScrollView
+        android:id="@+id/sc_poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:fadingEdgeLength="0dp"
+        android:fillViewport="true"
+        android:requiresFadingEdge="horizontal"
+        android:scrollbars="none">
+    <com.open.androidtvwidget.view.MainLayout
+        android:id="@+id/main_lay_sec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <!--海报区-->
+        <com.open.androidtvwidget.view.ReflectItemView
+            android:id="@+id/iv_frame1_1_sec"
+            style="@style/poster_reflect_item_sec"
+            android:focusable="true"
+            android:nextFocusRight="@+id/iv_frame1_2_sec"
+          >
+
+            <ImageView
+                android:id="@+id/iv_frame1_sec"
+                style="@style/poster" />
+        </com.open.androidtvwidget.view.ReflectItemView>
+
+        <com.open.androidtvwidget.view.ReflectItemView
+            android:id="@+id/iv_frame1_2_sec"
+            style="@style/poster_reflect_item_sec"
+            android:layout_height="210dp"
+            android:layout_marginLeft="465dp"
+            android:nextFocusLeft="@+id/iv_frame1_1_sec"
+            android:nextFocusRight="@+id/iv_frame1_3_sec">
+
+            <ImageView
+                android:id="@+id/iv_frame2_sec"
+                style="@style/poster" />
+        </com.open.androidtvwidget.view.ReflectItemView>
+        <com.open.androidtvwidget.view.ReflectItemView
+            android:id="@+id/iv_frame1_2_sec_2"
+            style="@style/poster_reflect_item_sec"
+            android:layout_height="160dp"
+            android:layout_width="225dp"
+            android:layout_marginLeft="465dp"
+            android:layout_marginTop="240dp">
+
+            <ImageView
+                android:id="@+id/iv_frame2_sec_2"
+                style="@style/poster" />
+        </com.open.androidtvwidget.view.ReflectItemView>
+        <com.open.androidtvwidget.view.ReflectItemView
+            android:id="@+id/iv_frame1_2_sec_3"
+            style="@style/poster_reflect_item_sec"
+            android:layout_height="160dp"
+            android:layout_width="190dp"
+            android:layout_marginLeft="695dp"
+            android:layout_marginTop="240dp">
+
+            <ImageView
+                android:id="@+id/iv_frame2_sec_3"
+                style="@style/poster" />
+        </com.open.androidtvwidget.view.ReflectItemView>
+
+        <com.open.androidtvwidget.view.ReflectItemView
+            android:id="@+id/iv_frame1_3_sec"
+            style="@style/poster_reflect_item_sec"
+            android:layout_height="170dp"
+            android:layout_marginLeft="910dp"
+            android:nextFocusLeft="@+id/iv_frame1_2_sec">
+
+            <ImageView
+                android:id="@+id/iv_frame3_sec"
+                style="@style/poster" />
+        </com.open.androidtvwidget.view.ReflectItemView>
+        <com.open.androidtvwidget.view.ReflectItemView
+            android:id="@+id/iv_frame1_3_sec_2"
+            style="@style/poster_reflect_item_sec"
+            android:layout_height="200dp"
+            android:layout_width="255dp"
+            android:layout_marginLeft="910dp"
+            android:layout_marginTop="200dp">
+
+            <ImageView
+                android:id="@+id/iv_frame3_sec_2"
+                style="@style/poster" />
+        </com.open.androidtvwidget.view.ReflectItemView>
+        <com.open.androidtvwidget.view.ReflectItemView
+            android:id="@+id/iv_frame1_3_sec_3"
+            style="@style/poster_reflect_item_sec"
+            android:layout_height="200dp"
+            android:layout_width="160dp"
+            android:layout_marginLeft="1170dp"
+            android:layout_marginTop="200dp">
+
+            <ImageView
+                android:id="@+id/iv_frame3_sec_3"
+                style="@style/poster" />
+        </com.open.androidtvwidget.view.ReflectItemView>
+        <com.open.androidtvwidget.view.ReflectItemView
+            android:id="@+id/iv_frame1_4_sec"
+            style="@style/poster_reflect_item_sec"
+            android:layout_height="220dp"
+            android:layout_width="320dp"
+            android:layout_marginLeft="1355dp">
+
+            <ImageView
+                android:id="@+id/iv_frame4_sec"
+                style="@style/poster" />
+        </com.open.androidtvwidget.view.ReflectItemView>
+        <com.open.androidtvwidget.view.ReflectItemView
+            android:id="@+id/iv_frame1_4_sec_2"
+            style="@style/poster_reflect_item_sec"
+            android:layout_height="150dp"
+            android:layout_width="320dp"
+            android:layout_marginLeft="1355dp"
+            android:layout_marginTop="250dp">
+
+            <ImageView
+                android:id="@+id/iv_frame4_sec_2"
+                style="@style/poster" />
+        </com.open.androidtvwidget.view.ReflectItemView>
+    </com.open.androidtvwidget.view.MainLayout>
+    </com.open.androidtvwidget.view.SmoothHorizontalScrollView>
+</FrameLayout>

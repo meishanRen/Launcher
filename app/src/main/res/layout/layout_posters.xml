@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="450dp">
+
+    <com.open.androidtvwidget.view.SmoothHorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:fadingEdgeLength="0dp"
+        android:fillViewport="true"
+        android:requiresFadingEdge="horizontal"
+        android:scrollbars="none">
+        <com.open.androidtvwidget.view.MainLayout
+            android:id="@+id/main_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:paddingTop="20dp">
+            <!--海报区-->
+            <com.open.androidtvwidget.view.ReflectItemView
+                android:id="@+id/iv_frame1_1"
+                android:layout_width="@dimen/poster_width_focus"
+                android:layout_height="@dimen/poster_height_focus"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:isReflect="true"
+                app:isShape="true">
+
+                <ImageView
+                    android:id="@+id/iv_frame1"
+                    style="@style/poster"
+                    android:src="@drawable/poster_default" />
+            </com.open.androidtvwidget.view.ReflectItemView>
+
+            <com.open.androidtvwidget.view.ReflectItemView
+                android:id="@+id/iv_frame1_2"
+                android:layout_width="@dimen/poster_width_focus"
+                android:layout_height="@dimen/poster_height_focus"
+                android:layout_marginLeft="360dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:isReflect="true"
+                app:isShape="true">
+
+                <ImageView
+                    android:id="@+id/iv_frame2"
+                    style="@style/poster"
+                    android:src="@drawable/poster_default" />
+
+
+            </com.open.androidtvwidget.view.ReflectItemView>
+
+            <com.open.androidtvwidget.view.ReflectItemView
+                android:id="@+id/iv_frame1_3"
+                android:layout_width="@dimen/poster_width_focus"
+                android:layout_height="@dimen/poster_height_focus"
+                android:layout_marginLeft="720dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:isReflect="true"
+                app:isShape="true">
+
+                <ImageView
+                    android:id="@+id/iv_frame3"
+                    style="@style/poster"
+                    android:src="@drawable/poster_default" />
+
+            </com.open.androidtvwidget.view.ReflectItemView>
+
+            <com.open.androidtvwidget.view.ReflectItemView
+                android:id="@+id/iv_frame1_4"
+                android:layout_width="@dimen/poster_width_focus"
+                android:layout_height="@dimen/poster_height_focus"
+                android:layout_marginLeft="1080dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:isReflect="true"
+                app:isShape="true">
+
+                <ImageView
+                    android:id="@+id/iv_frame4"
+                    style="@style/poster"
+                    android:src="@drawable/poster_default" />
+            </com.open.androidtvwidget.view.ReflectItemView>
+
+            <com.open.androidtvwidget.view.ReflectItemView
+                android:id="@+id/iv_frame1_5"
+                android:layout_width="@dimen/poster_width_focus"
+                android:layout_height="@dimen/poster_height_focus"
+                android:layout_marginLeft="1440dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:isReflect="true"
+
+                app:isShape="true">
+
+                <ImageView
+                    android:id="@+id/iv_frame5"
+                    style="@style/poster"
+                    android:src="@drawable/poster_default" />
+            </com.open.androidtvwidget.view.ReflectItemView>
+
+            <com.open.androidtvwidget.view.ReflectItemView
+                android:id="@+id/iv_frame1_6"
+                android:layout_width="@dimen/poster_width_focus"
+                android:layout_height="@dimen/poster_height_focus"
+                android:layout_marginLeft="1800dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:isReflect="true"
+                app:isShape="true">
+
+                <ImageView
+                    android:id="@+id/iv_frame6"
+                    style="@style/poster"
+                    android:src="@drawable/poster_default" />
+            </com.open.androidtvwidget.view.ReflectItemView>
+        </com.open.androidtvwidget.view.MainLayout>
+    </com.open.androidtvwidget.view.SmoothHorizontalScrollView>
+
+    <com.open.androidtvwidget.view.MainUpView
+        android:id="@+id/mainup_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:shadowImageRes="@drawable/shadow_frame"
+        app:upImageRes="@drawable/shape_mainupview_rectangle" />
+</FrameLayout>

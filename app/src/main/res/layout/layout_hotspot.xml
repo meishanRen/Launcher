@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="450dp"
+    android:paddingLeft="141dp">
+    <!--       android:layout_marginTop="450dp"-->
+    <ImageView
+        android:id="@+id/iv_play_record"
+        style="@style/app_image_view"
+        android:src="@drawable/selector_play_record" />
+
+    <ImageView
+        android:id="@+id/iv_mango_tv"
+        style="@style/app_image_view"
+        android:src="@drawable/selector_mango_tv" />
+
+
+    <ImageView
+        android:id="@+id/iv_migu"
+        style="@style/app_image_view"
+        android:src="@drawable/selector_migu" />
+
+    <ImageView
+        android:id="@+id/iv_xiaoy"
+        style="@style/app_image_view"
+        android:src="@drawable/selector_xiaoy" />
+    <!--暂时改成喜马拉雅-->
+    <ImageView
+        android:id="@+id/iv_video_search"
+        style="@style/app_image_view"
+        android:src="@drawable/selector_xmly" />
+
+    <ImageView
+        android:id="@+id/iv_ktv"
+        style="@style/app_image_view"
+        android:src="@drawable/selector_media_center" />
+
+
+    <ImageView
+        android:id="@+id/iv_setting"
+        style="@style/app_image_view"
+        android:src="@drawable/selector_setting" />
+
+</LinearLayout>

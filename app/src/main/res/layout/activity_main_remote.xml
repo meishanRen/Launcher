@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <TextView
+        android:id="@+id/textViewDeviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="20dip"
+        android:text="Device Name:"
+        android:textColor="#ff000000"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/service_running" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dip"
+        android:text="TextView"
+        android:textColor="#ff000000"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="63dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ly_bt_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="445dip" >
+
+            <Button
+                android:id="@+id/bt_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/checksound_version_selector"
+                android:nextFocusLeft="@+id/button1"
+                android:nextFocusRight="@+id/button1"
+                android:text="检查更新" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_bt_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dip" >
+
+            <Button
+                android:id="@+id/bt_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/btn_service_stop_selector"
+                android:nextFocusLeft="@+id/button2"
+                android:nextFocusRight="@+id/button2"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dip"
+        android:layout_marginRight="20dip"
+        android:text="Version: 1.0"
+        android:textColor="#ff000000"
+        android:textSize="16sp" />
+
+</RelativeLayout>

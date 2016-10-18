@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.haishang.launcher"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:name=".LauncherApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+        tools:replace="android:icon">
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:theme="@style/Theme.AppCompat" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+    </activity>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <activity
+            android:name=".ui.activity.AdActivity"
+            android:theme="@style/Theme.AppCompat">
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver android:name=".Receiver.DownloadFinishedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".Receiver.TimeChangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.activity.DownloadActivity"
+            android:theme="@style/Theme.myTheme" />
+
+        <!-- 遥控器相关 -->
+        <receiver android:name=".remote.yobbom.other.RemoteControlServiceReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".remote.yobbom.activity.MainActivity">
+
+            <!--
+                <intent-filter>
+                &lt;!&ndash;     <action android:name="android.intent.action.MAIN" />
+                     <category android:name="android.intent.category.LAUNCHER" />&ndash;&gt;
+            </intent-filter>
+            -->
+        </activity>
+
+        <service
+            android:name=".remote.yobbom.service.MainService"
+            android:exported="true" />
+
+        <activity android:name=".ui.activity.MainSecActivity">
+
+        </activity>
+    </application>
+
+</manifest>

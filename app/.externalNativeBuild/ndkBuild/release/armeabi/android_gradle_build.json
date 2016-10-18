@@ -1,0 +1,11 @@
+{
+  "buildFiles": [
+    "E:\\YOBBOM\\launcher\\app\\src\\main\\jni\\Android.mk",
+    "E:\\YOBBOM\\launcher\\app\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [],
+  "libraries": {},
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": []
+}

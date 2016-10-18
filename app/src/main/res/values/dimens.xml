@@ -1,0 +1,36 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_gap">39dp</dimen>
+
+    <!--      <dimen name="app_width">113dp</dimen>
+          <dimen name="app_height">144dp</dimen>-->
+
+    <dimen name="app_width">98dp</dimen>
+    <dimen name="app_height">130dp</dimen>
+
+
+    <!-- <dimen name="app_width">92dp</dimen>
+     <dimen name="app_height">144dp</dimen>-->
+    /
+
+    <dimen name="poster_width">280dp</dimen>
+    <dimen name="poster_height">380dp</dimen>
+
+    <dimen name="poster_width_xx">278dp</dimen>
+    <dimen name="poster_height_xx">378dp</dimen>
+
+    <dimen name="poster_width_focus">290dp</dimen>
+    <dimen name="poster_height_focus">395dp</dimen>
+
+    <dimen name="poster_gap">60dp</dimen>
+
+    <dimen name="dialog_width">500dp</dimen>
+    <dimen name="dialog_height">200dp</dimen>
+    <dimen name="margin_width">87dp</dimen>
+    <!--  第二次定义的dimens-->
+    <dimen name="poster_width_sec">420dp</dimen>
+    <dimen name="poster_height_sec">380dp</dimen>
+
+</resources>

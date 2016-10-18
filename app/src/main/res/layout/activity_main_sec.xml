@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MainActivity">
+    <!--logo和时间天气区-->
+    <include layout="@layout/layout_title"></include>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!--放海报-->
+
+    <include layout="@layout/scrollview_poster"></include>
+    <!--
+        <com.open.androidtvwidget.view.MainUpView
+            android:id="@+id/mainup_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:shadowImageRes="@drawable/frame_shadow"
+            app:upImageRes="@drawable/shape_mainupview_rectangle" />--><!--     app:shadowImageRes="@drawable/mainupview_shadow"   app:shadowImageRes="@drawable/xx"-->
+    <include layout="@layout/layout_hotspot"></include>
+    </FrameLayout>
+</LinearLayout>
